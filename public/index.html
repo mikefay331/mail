@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COINMAIL // Global Distribution</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="world-map-background"></div>
+    
+    <div class="navbar">
+        <div class="logo">COINMAIL</div>
+        <div class="nav-links">
+            <a href="#" class="active">Distribution</a>
+            <a href="#how-it-works" id="how-it-works-btn">How it works?</a>
+            <a href="https://x.com" target="_blank" class="x-link">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="x-logo">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+    
+    <div class="content-container">
+        <div class="distribution-dashboard">
+            <h1><span class="accent">GLOBAL</span> COIN DISTRIBUTION</h1>
+            
+            <div class="stats-container">
+                <div class="stat-large">
+                    <span id="total-recipients">0</span>
+                    <label>TOTAL RECIPIENTS</label>
+                </div>
+            </div>
+            
+            <div class="test-section">
+                <div class="input-group">
+                    <input type="email" id="test-email" placeholder="Enter your email address" />
+                    <button id="send-test" class="action-button">
+                        <i class="fas fa-vial"></i> SEND TEST COIN
+                    </button>
+                </div>
+                <div id="test-status" class="status-message"></div>
+            </div>
+        </div>
+        
+        <!-- Distribution visualization -->
+        <div class="distribution-visualization">
+            <div id="distribution-points" class="distribution-points"></div>
+        </div>
+        
+        <!-- Mail source icon -->
+        <div class="mail-source">
+            <div class="mail-icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+        </div>
+        
+        <!-- Email list panel -->
+        <div class="email-list-panel">
+            <div class="panel-header">
+                <h3>DISTRIBUTION LOG</h3>
+                <div class="panel-controls">
+                    <span id="email-list-count">0</span> emails sent
+                </div>
+            </div>
+            <div class="email-list" id="email-list"></div>
+        </div>
+    </div>
+
+    <!-- How it works modal -->
+    <div id="how-it-works-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>HOW IT WORKS<span class="accent">?</span></h2>
+            
+            <div class="process-container">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>GLOBAL REACH</h3>
+                    <p>Our coin is strategically distributed to millions of email recipients worldwide, creating an unprecedented network effect.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>MASS ADOPTION</h3>
+                    <p>By leveraging email as a distribution mechanism, we eliminate traditional adoption barriers and reach users who have never interacted with blockchain.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>NETWORK PROPAGATION</h3>
+                    <p>Each email contains a unique digital asset, creating immediate value and incentivizing viral sharing through existing communication channels.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3>EXPONENTIAL GROWTH</h3>
+                    <p>Our proprietary distribution algorithm ensures optimal spread across demographics, regions, and interest groups for maximum market penetration.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

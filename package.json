@@ -1,0 +1,29 @@
+{
+  "name": "coinmail-distribution",
+  "version": "1.0.0",
+  "description": "Advanced global coin distribution platform via email",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "coin",
+    "distribution",
+    "email",
+    "marketing",
+    "blockchain"
+  ],
+  "author": "mikefay331",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "nodemailer": "^6.10.1",
+    "resend": "^4.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
